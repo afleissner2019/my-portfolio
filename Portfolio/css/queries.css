@@ -1,0 +1,284 @@
+/*Below 1647px/16 103em */
+@media (max-width: 103em) {
+  .section-about {
+    max-width: 163rem;
+    padding-right: 6.4rem;
+  }
+}
+
+/*Below 1474px/16 = 92 */
+@media (max-width: 92em) {
+  .about-description {
+    padding: 0 4.4rem;
+  }
+}
+
+/* Below 1315px /16 82 */
+@media (max-width: 92em) {
+  .about-description {
+    font-size: 1.9rem;
+  }
+}
+
+/* *******************************
+Below 1344px 84*16= 1344px (Smaller desktops)
+******************************* */
+@media (max-width: 84em) {
+  .section-hero {
+    max-width: 135rem;
+  }
+
+  .bold-name {
+    font-size: 4.4rem;
+  }
+
+  .animated-title > div div {
+    font-size: 5.2rem;
+  }
+
+  .hero {
+    margin: 0 6.4rem 0 0;
+    align-items: center;
+  }
+
+  .about-description {
+    padding: 0 0.2rem;
+  }
+
+  .technologies-title {
+    font-size: 3rem;
+  }
+
+  .portfolio-attribute {
+    font-size: 1.6rem;
+  }
+  .portfolio-content {
+    padding: 6.4rem 3.2rem;
+  }
+}
+
+/* Below 1200px (Landscape Tablets) 1200 / 16 = 75 */
+@media (max-width: 75em) {
+  html {
+    /* 9px/16px= 56.25% */
+    font-size: 56.25%;
+  }
+
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .hero {
+    padding-right: 0;
+  }
+
+  .portfolio-attribute {
+    font-size: 1.4rem;
+  }
+
+  .technologies-title {
+    font-size: 3rem;
+  }
+
+  .tech-icon {
+    padding: 0.4rem;
+  }
+
+  .portfolio-content {
+    padding: 4.8rem 1.6rem;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+}
+
+/* Below 944px/16 60em*/
+
+@media (max-width: 59em) {
+  /* 8px/16px = 0.5 = 50% */
+  html {
+    font-size: 50%;
+  }
+
+  .portfolio-attribute {
+    font-size: 1.4rem;
+  }
+
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+
+  .technologies-title {
+    font-size: 3rem;
+  }
+
+  .portfolio-content {
+    padding: 4.8rem 1.6rem;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  /* Mobile Navigation */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 999;
+  }
+
+  /* normally we have to put position relative the parent
+  but in this case we dont have to */
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* transition value(property, time, type ex. ease-out/in) */
+    transition: all 0.5s ease-in;
+    /* when we use transform: translateX(100%) it creates a horizontal scrollbar 
+    to the right, to fix it add overflow-x: hidden; on body & html tag */
+    transform: translateX(100%);
+
+    /* Hide the navigation */
+    /* Animation or transition is not possible when we use display none */
+    /* display: none; */
+
+    /* 1. Hide it visually */
+    opacity: 0;
+
+    /* 2. Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3. Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  /* We will do this only when the .nav-open exist then  
+  .icon-mobile-nav[name="close-outline"] applies*/
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    background-color: #73c6b6;
+  }
+
+  .main-nav-list {
+    padding-bottom: 100%;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:hover,
+  .main-nav-link:active {
+    color: #e6e6e6;
+  }
+
+  .main-nav-link,
+  .main-nav-visited {
+    font-size: 3rem;
+  }
+
+  .hero-img {
+    height: 29vh;
+  }
+}
+
+/* ***************** */
+
+/* Below 858px/16 53em*/
+@media (max-width: 53em) {
+  .section-skills {
+    padding: 9.6rem 6.4rem;
+  }
+  .about-description {
+    margin-bottom: 1rem;
+  }
+
+  .technologies-title {
+    font-size: 3.6rem;
+    padding-bottom: 4.8rem;
+    padding: 4.8rem;
+  }
+
+  .tech-icon {
+    padding: 1.2rem;
+  }
+  .portfolio-attribute {
+    font-size: 2rem;
+    padding-left: 4.8rem;
+  }
+
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-card .technologies-container {
+    min-width: 100%;
+  }
+
+  .portfolio-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .section-portfolio {
+    padding: 9.6rem 6.4rem;
+  }
+}
+
+/* Below 552px/16px = 34em (Phones) */
+@media (max-width: 34em) {
+  .section-about {
+    padding-left: 2.2rem;
+    padding-right: 0;
+  }
+
+  .section-skills {
+    padding: 9.6rem 1.6rem;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 0 0.8rem;
+  }
+
+  .section-portfolio {
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+  }
+
+  .btn-form {
+    margin-top: 1.2rem;
+  }
+
+  .hero {
+    margin-right: 2rem;
+  }
+}

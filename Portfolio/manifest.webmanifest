@@ -1,0 +1,9 @@
+{
+    "icons": [
+      {
+        "src": "../image/small-logo.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ]
+  }

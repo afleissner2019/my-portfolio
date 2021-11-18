@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/small-logo.png" />
+    <link rel="apple-touch-icon" href="./image/small-logo.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="./index.js"></script>
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#"><img class="logo" alt="portfolio logo" src="./image/mylogo.png"/> </a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            
+            <li><a class="main-nav-link" href="#about">About</a></li>
+            <li><a class="main-nav-link" href="#skills">Skills</a></li>
+            <li><a class="main-nav-link" href="#portfolio">Portfolio</a></li>
+            <li><a class="main-nav-link" href="#contact">Contact</a></li>
+
+          </ul>
+        </nav>
+
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+
+      </header>
+      <main>
+        <section class="section-hero">
+         
+          <div class="animated-title">
+            <div class="text-top">
+              <div>
+                <span><strong class="bold-name">Af</strong></span>
+                <span>Leißner</span>
+              </div>
+            </div>
+            <div class="text-bottom">
+              <div class="job-title"><strong></strong>Web Developer</div>
+            </div>
+
+            <div class="hero-img-box">
+              <img
+                src="./image/mobile.png"
+                class="mobile-img"
+                alt="computer image"
+              />
+            </div>
+
+            <div class="scroll-down">
+              <p>Scroll Down <br>
+                &#8595;</p>
+            </div>
+          </div>
+
+        </section>
+     
+        <section class="section-about" id="about">
+          <div class="container">
+            <h2 class="subheading">About</h2>
+          </div>
+          <div class="container hero"> 
+          
+            <p class="about-description">
+              I have finished my training as a <strong>Web developer</strong> at Digital Career Institute.
+              I have been learning HTML5, CSS3, Javascript, React and some other web development concepts and technologies such as MongoDb, Node.JS etc. 
+
+            </p>
+
+            <div class="hero-img-box">
+              <img
+                src="./image/about-pix.jpg"
+                class="hero-img"
+                alt="computer image"
+              />
+            </div>
+            
+          
+          </div>
+        </section>
+
+        <section class="section-skills" id="skills">
+          <div class="container">
+            <h3 class="subheading">Skills</h3>
+          </div>
+          <div class="container grid grid-2-columns grid-center-vertically">
+            
+            <div class="skills-text-box">
+              <p class="frontend-backend">Frontend</p>
+             <ul class="list-skills">
+               <li>HTML5</li>
+               <li>CSS</li>
+               <li>JavaSCript</li>
+               <li>React</li>
+               <li>Material UI</li>
+               <li>Semantic UI</li>
+               <li>Bootstrap</li>
+             </ul>
+            </div>
+            <div class="skills-img-box">
+              <img
+                src="./image/frontend.png"
+                class="step-img"
+                alt="iphone app selection screen"
+              />
+            </div>
+  
+            <div class="skills-img-box">
+              <img
+                src="./image/backend.png"
+                class="step-img"
+                alt="iphone app delivery"
+              />
+            </div>
+
+            <div class="skills-text-box center">
+              <p class="frontend-backend backend">Backend</p>
+              <ul class="list-skills backend-list">
+                <li>Node Js</li>
+                <li>MongoDb</li>
+                <li>REST API</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-portfolio" id="portfolio">
+          <div class="container">
+            <h4 class="subheading">Portfolio</h4>
+          <div class="container grid grid-3-columns margin-md">
+
+           <div class="portfolio-card">
+              <a class="main-nav-link" href="https://omnifood-af.netlify.app" target="_blank">
+              <img
+                src="./image/onmifood.jpg"
+                class="portfolio-img"
+                alt="omnifood image"
+              />
+  
+              <div class="portfolio-content">
+                <div>
+                  <p class="portfolio-title">Omnifood</p>
+                </div>
+              </div>
+
+              <div class="technologies-container"> 
+                <p class="technologies-title">Technologies</p>
+               <ul class="technologies-list">
+                <li class="portfolio-attribute"><ion-icon class="tech-icon" name="logo-html5"></ion-icon> <span>HTML5</span></li>
+                <li class="portfolio-attribute"><ion-icon class="tech-icon" name="logo-css3"></ion-icon> <span>CSS3</span></li>
+                <li class="portfolio-attribute"><ion-icon class="tech-icon" name="logo-nodejs"></ion-icon> <span>Javascript</span></li>
+                <li class="portfolio-attribute"><ion-icon class="tech-icon" name="tv-outline"></ion-icon> <span>Responsive Design</span></li>
+               </ul>
+              </div>
+              </a> 
+            </div>
+  
+            <div class="portfolio-card">
+              <a class="main-nav-link" href="https://mini-youtube-project.netlify.app/" target="_blank">
+              <img
+                src="./image/mini-youtube.jpg"
+                class="portfolio-img"
+                alt="mini youtube image"
+              />
+
+
+  
+              <div class="portfolio-content">
+                <div>
+                  <p class="portfolio-title">Video Search</p>
+                </div>
+              </div>
+
+              <div class="technologies-container"> 
+                <p class="technologies-title">Technologies</p>
+               <ul class="technologies-list">
+                <li class="portfolio-attribute"><ion-icon class="tech-icon" name="logo-react"></ion-icon> <span>React</span></li>
+                <li class="portfolio-attribute"><ion-icon class="tech-icon" name="logo-html5"></ion-icon> <span>HTML5</span></li>
+                <li class="portfolio-attribute"><ion-icon class="tech-icon" name="logo-css3"></ion-icon> <span>CSS3</span></li>
+                <li class="portfolio-attribute"><ion-icon class="tech-icon" name="logo-nodejs"></ion-icon> <span>Javascript</span></li>
+                
+               </ul>
+              </div>
+
+
+            </a>
+
+            </div>
+  
+            <div class="portfolio-card">
+              <a class="main-nav-link" href="https://image-search-af.netlify.app/" target="_blank">
+              <img
+                src="./image/image-search.jpg"
+                class="portfolio-img"
+                alt="search image"
+              />
+  
+              <div class="portfolio-content">
+                <div>
+                  <p class="portfolio-title">Image Search</p>
+                </div>
+              </div>
+
+              <div class="technologies-container"> 
+                <p class="technologies-title">Technologies</p>
+               <ul class="technologies-list">
+                <li class="portfolio-attribute"><ion-icon class="tech-icon" name="logo-react"></ion-icon> <span>React</span></li>
+                <li class="portfolio-attribute"><ion-icon class="tech-icon" name="logo-html5"></ion-icon> <span>HTML5</span></li>
+                <li class="portfolio-attribute"><ion-icon class="tech-icon" name="logo-css3"></ion-icon> <span>CSS3</span></li>
+                <li class="portfolio-attribute"><ion-icon class="tech-icon" name="logo-nodejs"></ion-icon> <span>Javascript</span></li>
+                
+               </ul>
+              </div>
+            </a> 
+            </div>
+          </div>
+        </section>
+
+          <section class="section-cta" id="contact">
+            <div class="container">
+              <div class="cta">
+                <div class="cta-text-box">
+                  <h5 class="heading-secondary">Contact</h5>
+                  <form class="cta-form" action="#">
+                    <div>
+                      <label for="full-name">First Name</label>
+                      <input
+                        id="first-name"
+                        type="text"
+                        placeholder="First name"
+                        required
+                      />
+                    </div>
+    
+                    <div>
+                      <label for="email">Last Name</label>
+                      <input
+                        id="last-name"
+                        type="text"
+                        placeholder="Last name"
+                        required
+                      />
+                    </div>
+
+                    <div>
+                      <label for="email">Email Address</label>
+                      <input
+                        id="email"
+                        type="email"
+                        placeholder="youremail@example.com"
+                        required
+                      />
+                    </div>
+    
+                    <button class="btn btn-form">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <footer class="footer">
+            <div class="container grid grid-footer">
+              <div class="logo-col">
+                <a href="#" class="footer-logo">
+                  <img
+                    class="logo"
+                    alt="my-logo"
+                    src="./image/mylogo.png"
+                  />
+                </a>
+      
+                <ul class="social-link">
+                  <li><a class="footer-link" href="https://github.com/afleissner2019"><ion-icon class="social-icon" name="logo-github"></ion-icon></a></li>
+                  <li><a class="footer-link" href="https://www.linkedin.com/in/af-lei%C3%9Fner-16a34822/"><ion-icon class="social-icon" name="logo-linkedin"></ion-icon></a></li>
+                  <li><a class="footer-link" href="https://www.xing.com/profile/Af_Leissner/cv"><ion-icon class="social-icon" name="logo-xing"></ion-icon></a></li>
+                </ul>
+      
+                <p class="copyright">
+                  Copyright &copy; <span class="year">2027</span> by Af Leißner. All rights reserved.
+                </p>
+              </div>
+              <div class="address-col">
+                <p class="footer-heading"></p>
+                <address class="contacts">
+                  <p class="address">Hamburg Germany</p>
+                  <p class="contact-info">
+                    <a class="footer-link" href="tel:01520-1947235">01520-1947235</a>
+                    <br/>
+                    <a class="footer-link" href="mailto:af_ajay@yahoo.com">af_ajay@yahoo.com</a>
+                  </p>
+                </address>
+              </div>
+            </div>
+          </footer>
+      </main>
+</body>
+</html>
