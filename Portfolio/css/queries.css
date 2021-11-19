@@ -13,13 +13,6 @@
   }
 }
 
-/* Below 1315px /16 82 */
-@media (max-width: 92em) {
-  .about-description {
-    font-size: 1.9rem;
-  }
-}
-
 /* *******************************
 Below 1344px 84*16= 1344px (Smaller desktops)
 ******************************* */
@@ -54,6 +47,13 @@ Below 1344px 84*16= 1344px (Smaller desktops)
   }
   .portfolio-content {
     padding: 6.4rem 3.2rem;
+  }
+}
+
+/* Below 1315px /16 82 */
+@media (max-width: 92em) {
+  .about-description {
+    font-size: 1.9rem;
   }
 }
 
@@ -180,15 +180,17 @@ Below 1344px 84*16= 1344px (Smaller desktops)
   }
 
   .nav-open .main-nav {
+    font-size: 4.6rem;
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0);
     background-color: #73c6b6;
+    z-index: 10;
   }
 
   .main-nav-list {
-    padding-bottom: 100%;
+    flex-direction: column;
     gap: 4.8rem;
   }
 
@@ -246,7 +248,7 @@ Below 1344px 84*16= 1344px (Smaller desktops)
   }
 
   .section-portfolio {
-    padding: 9.6rem 6.4rem;
+    padding: 9.6rem 8rem;
   }
 }
 

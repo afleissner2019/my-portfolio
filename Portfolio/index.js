@@ -7,9 +7,41 @@ yearElement.textContent = currentYear;
 // MAke mobile navigation work
 const btnNav = document.querySelector(".btn-mobile-nav");
 const headerElement = document.querySelector(".header");
+const link1 = document.querySelector(".link1");
+const link2 = document.querySelector(".link2");
+const link3 = document.querySelector(".link3");
+const githubLink = document.querySelector(".githubLink");
+const linkedinLink = document.querySelector(".linkedinLink");
+const xingLink = document.querySelector(".xingLink");
 
 btnNav.addEventListener("click", function () {
   headerElement.classList.toggle("nav-open");
+});
+
+// Project links
+link1.addEventListener("click", function () {
+  window.location = "https://omnifood-af.netlify.app";
+});
+
+link2.addEventListener("click", function () {
+  window.location = "https://mini-youtube-project.netlify.app/";
+});
+
+link3.addEventListener("click", function () {
+  window.location = "https://image-search-af.netlify.app/";
+});
+
+// Social links
+githubLink.addEventListener("click", function () {
+  window.location = "https://github.com/afleissner2019";
+});
+
+linkedinLink.addEventListener("click", function () {
+  window.location = "https://www.linkedin.com/in/af-lei%C3%9Fner-16a34822/";
+});
+
+xingLink.addEventListener("click", function () {
+  window.location = "https://www.xing.com/profile/Af_Leissner/cv";
 });
 
 // Smooth Scrolling Animation
@@ -28,6 +60,8 @@ allLinks.forEach(function (link) {
         top: 0,
         behavior: "smooth",
       });
+
+    // test
 
     // Scroll to other links
     if (href !== "#" && href.startsWith("#")) {

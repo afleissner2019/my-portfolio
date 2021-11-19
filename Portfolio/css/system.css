@@ -31,3 +31,12 @@
       SPACING SYSTEM (px)
         2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
    */
+
+/* // portfolioLink.forEach(function (portfoliolink) {
+    //   portfoliolink.addEventListener("click", function (event) {
+    //     event.preventDefault();
+    //     window.location.href = "https://omnifood-af.netlify.app";
+    //     window.location.href = "https://mini-youtube-project.netlify.app/";
+    //     window.location.href = "https://image-search-af.netlify.app/";
+    //   });
+    // }); */

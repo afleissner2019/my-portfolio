@@ -105,17 +105,39 @@ Header
 }
 
 .logo {
-  height: 3.5rem;
+  height: 6.6rem;
+  box-shadow: 10px 10px 5px #ccc;
 }
 
 /* ***************
 Navigation
 ******************/
+.main-nav-link {
+  position: relative;
+}
+
 .main-nav-list {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 3.2rem;
+}
+
+.main-nav-link:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  /* right: 0; */
+  transition: all 0.2s;
+  height: 3px;
+  background-color: #45776d;
+  width: 0;
+  transition: width 0.3s;
+}
+
+.main-nav-link:hover:after {
+  width: 100%;
 }
 
 .main-nav-link:link,
@@ -452,6 +474,7 @@ Porfolio Section
 .portfolio-card:hover .technologies-container {
   display: inline;
   background-color: #b9e3db;
+  cursor: pointer;
 }
 
 .portfolio-img {
@@ -462,7 +485,6 @@ Porfolio Section
 .technologies-list {
   display: flex;
   flex-direction: column;
-  /* justify-self: center; */
   gap: 1.6rem;
   list-style: none;
 }
@@ -504,7 +526,7 @@ CTA Section
   /* padding: 9.6rem 0 12.8rem 0; */
 
   /* top, horizontal, left  3values*/
-  padding: 12.8rem 0 12.8rem;
+  padding: 12.8rem 9.6rem;
 }
 
 .cta {
@@ -601,6 +623,7 @@ Footer Section
   list-style: none;
   display: flex;
   gap: 2.4rem;
+  color: #767676;
 }
 
 .footer-link:link,
@@ -608,6 +631,7 @@ Footer Section
   text-decoration: none;
   font-size: 1.4rem;
   color: #767676;
+
   transition: all 0.3s;
 }
 
