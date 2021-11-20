@@ -207,12 +207,19 @@ Below 1344px 84*16= 1344px (Smaller desktops)
   .hero-img {
     height: 29vh;
   }
+
+  .copyright {
+    line-height: 1.8rem;
+  }
 }
 
 /* ***************** */
 
 /* Below 858px/16 53em*/
 @media (max-width: 53em) {
+  .section-cta {
+    padding: 12.8rem 4.8rem;
+  }
   .section-skills {
     padding: 9.6rem 6.4rem;
   }
@@ -248,7 +255,7 @@ Below 1344px 84*16= 1344px (Smaller desktops)
   }
 
   .section-portfolio {
-    padding: 9.6rem 8rem;
+    /* padding: 9.6rem 8rem; */
   }
 }
 
