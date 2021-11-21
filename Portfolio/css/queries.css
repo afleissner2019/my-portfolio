@@ -83,6 +83,7 @@ Below 1344px 84*16= 1344px (Smaller desktops)
 
   .technologies-title {
     font-size: 3rem;
+    font-weight: 500;
   }
 
   .tech-icon {
@@ -115,6 +116,7 @@ Below 1344px 84*16= 1344px (Smaller desktops)
 
   .technologies-title {
     font-size: 3rem;
+    letter-spacing: 0.5px;
   }
 
   .portfolio-content {
@@ -228,9 +230,8 @@ Below 1344px 84*16= 1344px (Smaller desktops)
   }
 
   .technologies-title {
-    font-size: 3.6rem;
-    padding-bottom: 4.8rem;
-    padding: 4.8rem;
+    /* padding-bottom: 0; */
+    padding: 2.4rem 2rem;
   }
 
   .tech-icon {
@@ -243,6 +244,10 @@ Below 1344px 84*16= 1344px (Smaller desktops)
 
   .grid-3-columns {
     grid-template-columns: 1fr;
+  }
+
+  .portfolio-img {
+    height: 70%;
   }
 
   .footer {
@@ -349,27 +354,8 @@ Below 1344px 84*16= 1344px (Smaller desktops)
     padding-bottom: 4.8rem;
     width: 80%;
   }
+
+  .technologies-list {
+    gap: 1.2rem;
+  }
 }
-
-/* Below 290px/16px = 18em (Phones) */
-/* @media (max-width: 18em) {
-  .grid-2-columns {
-    grid-template-columns: 1fr;
-  }
-
-  .skills-img-box:nth-child(1) {
-    grid-row: 1;
-  }
-
-  .skills-img-box:nth-child(3) {
-    grid-row: 5;
-  }
-
-  .backend-list {
-    align-items: center;
-  }
-
-  .backend {
-    justify-content: center;
-  }
-} */
