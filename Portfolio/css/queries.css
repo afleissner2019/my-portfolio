@@ -266,7 +266,6 @@ Below 1344px 84*16= 1344px (Smaller desktops)
 @media (max-width: 34em) {
   .section-about {
     padding-left: 2.2rem;
-    padding-right: 0;
   }
 
   .section-skills {
@@ -323,7 +322,6 @@ Below 1344px 84*16= 1344px (Smaller desktops)
     padding: 4.8rem 0;
   }
 
-  /* test */
   .grid-2-columns {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -356,6 +354,10 @@ Below 1344px 84*16= 1344px (Smaller desktops)
   }
 
   .technologies-list {
-    gap: 1.2rem;
+    gap: 1.4rem;
+  }
+
+  .portfolio-attribute {
+    font-size: 1.2;
   }
 }
