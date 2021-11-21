@@ -30,7 +30,6 @@ Below 1344px 84*16= 1344px (Smaller desktops)
   }
 
   .hero {
-    margin: 0 6.4rem 0 0;
     align-items: center;
   }
 
@@ -71,10 +70,6 @@ Below 1344px 84*16= 1344px (Smaller desktops)
   .grid {
     column-gap: 4.8rem;
     row-gap: 6.4rem;
-  }
-
-  .hero {
-    padding-right: 0;
   }
 
   .portfolio-attribute {
@@ -259,6 +254,10 @@ Below 1344px 84*16= 1344px (Smaller desktops)
   }
   .frontend-backend {
     font-size: 3.6rem;
+  }
+
+  .section-about {
+    padding: 9.6rem 3.2rem;
   }
 }
 
