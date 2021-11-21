@@ -264,10 +264,6 @@ Below 1344px 84*16= 1344px (Smaller desktops)
 
 /* Below 552px/16px = 34em (Phones) */
 @media (max-width: 34em) {
-  .section-about {
-    padding-left: 2.2rem;
-  }
-
   .section-skills {
     padding: 9.6rem 1.6rem;
   }
@@ -287,10 +283,6 @@ Below 1344px 84*16= 1344px (Smaller desktops)
 
   .btn-form {
     margin-top: 1.2rem;
-  }
-
-  .hero {
-    margin-right: 2rem;
   }
 
   .footer {
@@ -351,10 +343,6 @@ Below 1344px 84*16= 1344px (Smaller desktops)
   .step-img {
     padding-bottom: 4.8rem;
     width: 80%;
-  }
-
-  .technologies-list {
-    gap: 1.4rem;
   }
 
   .portfolio-attribute {
