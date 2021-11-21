@@ -225,7 +225,7 @@ Below 1344px 84*16= 1344px (Smaller desktops)
   }
 
   .technologies-title {
-    padding: 2.4rem 2rem;
+    padding: 0.2rem 2rem;
   }
 
   .tech-icon {
@@ -345,5 +345,12 @@ Below 1344px 84*16= 1344px (Smaller desktops)
 
   .portfolio-attribute {
     gap: 2.4rem;
+  }
+
+  .response-left {
+    text-align: center;
+  }
+  .portfolio-card .technologies-container {
+    text-align: left;
   }
 }
